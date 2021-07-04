@@ -89,17 +89,18 @@ pip install -r requirements.txt
 
 
 
-    ```powershell
-    $env:FLASK_APP = "api.py" 
-    ```  
+```powershell
+$env:FLASK_APP = "api.py" 
+```  
 
-   ```powershell
-   $env:FLASK_ENV = "development"
-   ```
+```powershell
+$env:FLASK_ENV = "development"
+```
+
    
-   ```powershell
-   flask run --reload 
-   ```
+```powershell
+flask run --reload 
+```
 
 
 
