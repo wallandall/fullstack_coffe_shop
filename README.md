@@ -39,9 +39,10 @@ From your project directory initialize and activate a virtualenv using the below
 ```
 
 >**Note** - In Windows, the `venv` does not have a `bin` directory. Therefore you need to use the analogous command shown below:
-    ```bash
-    env/Scripts/activate 
-    ```
+    
+```bash
+env/Scripts/activate 
+```
 
 ### PIP Dependencies
 
