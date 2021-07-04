@@ -11,7 +11,12 @@ The  Full Stack Coffee Shop application performs the below actions:
 4. Allow the shop managers to create new drinks and edit existing drinks.
 
 
-
+## Configuration
+1. Clone this repositrory by running the below command from the location you want to clone the project:
+   ```bash
+   git clone https://github.com/wallandall/fullstack_coffe_shop.git
+   ```
+2. 
 ## Backend Setup
 
 The `./backend` directory contains the Flask API
@@ -33,47 +38,70 @@ From your project directory initialize and activate a virtualenv using the below
  source env/bin/activate 
 ```
 
->**Note** - In Windows, the `venv` does not have a `bin` directory. Therefore, you'd use the analogous command shown below:
-    ```cmd
+>**Note** - In Windows, the `venv` does not have a `bin` directory. Therefore you need to use the analogous command shown below:
+    ```bash
     env/Scripts/activate 
     ```
 
-3. Install the dependencies from the backen directory:
-   
-    ``` pip install -r requirements.txt ```
+### PIP Dependencies
 
-4. Run the development server from the backend folder:
-   
-   ``` export FLASK_APP=flaskr ``` 
+Once you have your virtual environment setup and running, install dependencies by navigating to the `./backend` directory and running:
 
-   ``` export FLASK_ENV=development ```
-
-   ``` flask run --reload```
-   
-   >**Note** - for Windows CMD:
-
-    ``` set FLASK_APP=flaskr ``` 
-
-   ``` set FLASK_ENV=development ```
-   
-   ``` flask run --reload```
-
-    >**Note** - for Windows PowerShell:
-
-    ``` $env:FLASK_APP = "flaskr" ```  
-
-   ``` $env:FLASK_ENV = "development" ```
-   
-   ``` flask run --reload ```
-
-
-#### PIP Dependencies
-
-Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
-
+  
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt 
 ```
+
+
+### Run the development server from the `./backend ` folder:
+   
+   ```bash
+   export FLASK_APP=api.py 
+   ``` 
+
+
+   ```bash
+   export FLASK_ENV=development 
+   ```
+
+
+   ```bash
+   flask run --reload
+   ```
+   
+   >**Note** - If you are using Windows CMD, use the below commands :
+
+   ```dos
+   set FLASK_APP=api.py 
+   ```
+
+   ```dos
+   set FLASK_ENV=development 
+   ```
+  
+  ```dos
+  flask run --reload
+  ```
+   
+
+>**Note** - If you are using Windows PowerShell, use the below commands:
+
+
+
+    ```powershell
+    $env:FLASK_APP = "api.py" 
+    ```  
+
+   ```powershell
+   $env:FLASK_ENV = "development"
+   ```
+   
+   ```powershell
+   flask run --reload 
+   ```
+
+
+
 
 
 
