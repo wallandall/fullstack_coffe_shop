@@ -16,7 +16,25 @@ The  Full Stack Coffee Shop application performs the below actions:
    ```bash
    git clone https://github.com/wallandall/fullstack_coffe_shop.git
    ```
-2. 
+2. This application uses [Auth0](https://auth0.com/docs) for authentication, therefore an account is required
+   1. Create a new Auth0 Account
+   2. Select a unique tenant domain
+   3. Create a new, single page web application
+   4. Create a new API
+      1. in API Settings:
+      2. Enable RBAC
+      3. Enable Add Permissions in the Access Token
+   5. Create new API permissions:
+      1. get:drinks-detail
+      2. post:drinks
+      3. patch:drinks
+      4. delete:drinks
+   6. Create new roles for:
+      1. Barista
+         1. can get:drinks-detail
+      2. Manager
+         1. can perform all actions
+
 ## Backend Setup
 
 The `./backend` directory contains the Flask API
@@ -54,7 +72,7 @@ pip install -r requirements.txt
 ```
 
 
-### Run the development server from the `./backend ` folder:
+### Run the development server from the `./backend./src ` folder:
    
    ```bash
    export FLASK_APP=api.py 
@@ -73,7 +91,7 @@ pip install -r requirements.txt
    >**Note** - If you are using Windows CMD, use the below commands :
 
    ```dos
-   set FLASK_APP=api.py 
+   set FLASK_APP=api.py
    ```
 
    ```dos
@@ -97,7 +115,7 @@ $env:FLASK_APP = "api.py"
 $env:FLASK_ENV = "development"
 ```
 
-   
+
 ```powershell
 flask run --reload 
 ```
